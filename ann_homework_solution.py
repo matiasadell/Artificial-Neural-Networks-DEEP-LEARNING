@@ -1,5 +1,6 @@
 # Artificial-Neural-Networks
 
+# Cómo importar las librerías
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
