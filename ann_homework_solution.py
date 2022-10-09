@@ -1,23 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 28 10:38:56 2019
+# Artificial-Neural-Networks
 
-@author: juangabriel
-"""
-
-# Redes Neuronales Artificales
-
-# Instalar Theano
-# pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
-
-# Instalar Tensorflow y Keras
-# conda install -c conda-forge keras
-
-# Parte 1 - Pre procesado de datos
-
-
-# Cómo importar las librerías
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -44,9 +26,9 @@ from sklearn.compose import ColumnTransformer
 
 transformer = ColumnTransformer(
     transformers=[
-        ("Churn_Modelling",        # Un nombre de la transformación
-         OneHotEncoder(categories='auto'), # La clase a la que transformar
-         [1]            # Las columnas a transformar.
+        ("Churn_Modelling",      
+         OneHotEncoder(categories='auto'),
+         [1]           
          )
     ], remainder='passthrough'
 )
